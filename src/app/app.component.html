@@ -1,0 +1,88 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to the Findex Ferry Terminal!
+  </h1>
+  <div class="instructions">
+    <p>
+      The Findex Ferry Terminal is the latest and greatest initiative for Findex
+      Digital
+    </p>
+
+    <p>
+      Findex has bought a small ferry terminal and two ferries are available at
+      any one time.
+    </p>
+
+    <p>Ferry Types:</p>
+    <dl>
+      <dt>Small Ferry</dt>
+      <dd>A Small Ferry can hold 8 small vehicles</dd>
+      <dt>Large Ferry</dt>
+      <dd>A Large Ferry can hold 6 Large vehicles</dd>
+    </dl>
+
+    <h2>The Test</h2>
+    <p>
+      There is an API described by the interface IVehicleProvider which
+      currently has one implementation, HardcodedVehicleService, which provides
+      a random vehicle at the click of the button. The goal for this test is to
+      build out the logic to assign these vehicles to the appropriate ferry and
+      to handle when the ferry is full.
+    </p>
+
+    <p>The goal of this test is to see understanding of:</p>
+    <ul>
+      <li>SOLID programming practices</li>
+      <li>Understanding of basic UI practices</li>
+      <li>Create extensible code</li>
+    </ul>
+
+    <h3>Bonus POINTS</h3>
+    <p>
+      Each car type costs a different amount to board a ferry. The Ferry worker
+      earns 10% of the total ticket cost per day.
+    </p>
+
+    <table>
+      <tr>
+        <th>Car Type</th>
+        <th>Cost</th>
+      </tr>
+      <tr>
+        <td>Car</td>
+        <td>$5</td>
+      </tr>
+      <tr>
+        <td>Van</td>
+        <td>$7.50</td>
+      </tr>
+      <tr>
+        <td>Truck</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>Bus</td>
+        <td>$15</td>
+      </tr>
+    </table>
+
+    <p>For each vehicle that boards the ferry calculate how much:</p>
+    <ul>
+      <li>the terminal earns</li>
+      <li>the worker earns</li>
+    </ul>
+  </div>
+</div>
+
+<div class="submission">
+  <h2>Submission</h2>
+  <p>
+    Please fork this code base. when you submit please share this to
+    stuart.james@findex.com.au and brenton.sheen@findex.com.au
+  </p>
+</div>
+
+<div class="solution">
+  <ferry-terminal></ferry-terminal>
+</div>
