@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { VehicleSummary } from "src/interfaces/ivehicle.provider";
+import { CostingService } from "../../services/costing.service";
 
 @Component({
   selector: "large-ferry",
@@ -8,4 +9,10 @@ import { VehicleSummary } from "src/interfaces/ivehicle.provider";
 })
 export class LargeFerryComponent {
   @Input() ferry: VehicleSummary[];
+
+  constructor(private costingService: CostingService) {}
+
+  get totalCost() {
+    return this.costingService.totalCost(this.ferry);
+  }
 }

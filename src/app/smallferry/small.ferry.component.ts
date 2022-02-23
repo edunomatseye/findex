@@ -10,9 +10,9 @@ import { CostingService } from "../../services/costing.service";
 export class SmallFerryComponent {
   @Input() ferry: VehicleSummary[];
 
-  constructor(private cost: CostingService) {}
+  constructor(private costingService: CostingService) {}
 
   get totalCost() {
-    //return this.cost.totalCost
+    return this.costingService.totalCost(this.ferry);
   }
 }
