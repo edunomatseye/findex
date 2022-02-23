@@ -7,3 +7,10 @@
   width: 100%;
   text-align: left;
 }
+.ferryflat {
+  background-color: violet;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}

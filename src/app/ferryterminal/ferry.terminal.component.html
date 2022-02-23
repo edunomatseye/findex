@@ -4,10 +4,17 @@
 </div>
 
 <hr />
-<div>Worker Cost: {{totalCost * 0.1 | currency}}</div>
-<div>Terminal Cost: {{totalCost * 0.9 | currency}}</div>
-<div>Total Cost: {{totalCost | currency}}</div>
+<div class="ferryflat">
+  <div>Worker Cost: {{totalCost * 0.1 | currency}}</div>
+  <div>Terminal Cost: {{totalCost * 0.9 | currency}}</div>
+  <div>Total Cost: {{totalCost | currency}}</div>
 
-<div style="margin: 20px;">
-  <button (click)="getVehicle()">Get Vehicle</button>
+  <div style="margin: 20px;">
+    <button
+      style="font-size: 25px; font-weight: bolder;"
+      (click)="getVehicle()"
+    >
+      Get Vehicle
+    </button>
+  </div>
 </div>

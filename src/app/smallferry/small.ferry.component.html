@@ -1,10 +1,14 @@
-<div>Small Ferry</div>
-<div *ngFor="let car of ferry; let i=index">
-  <span>{{i+1}}. </span> <span>Vehicle: {{car.type }}</span>,
-  <span>Cost {{car.cost | currency}}</span>
-</div>
+<div class="smallferry">
+  <div style="font-size: 19px; font-weight: bold; padding: 10px;">
+    Small Ferry
+  </div>
+  <div *ngFor="let car of ferry; let i=index">
+    <span>{{i+1}}. </span> <span>Vehicle: {{car.type }}</span>,
+    <span>Cost {{car.cost | currency}}</span>
+  </div>
 
-<hr />
-<div>Worker Cost: {{totalCost * 0.1 | currency}}</div>
-<div>Terminal Cost: {{totalCost * 0.9 | currency}}</div>
-<div>Total Cost: {{totalCost | currency}}</div>
+  <hr />
+  <div>Worker Cost: {{totalCost * 0.1 | currency}}</div>
+  <div>Terminal Cost: {{totalCost * 0.9 | currency}}</div>
+  <div>Total Cost(Small Ferry): {{totalCost | currency}}</div>
+</div>
