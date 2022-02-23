@@ -9,6 +9,14 @@ export interface IVehicleProvider {
 export class VehicleSummary {
   type: VehicleType;
   category: VehicleSize;
+  cost: VehicleCost;
+}
+
+export enum VehicleCost {
+  car = 5,
+  van = 7.5,
+  truck = 10,
+  bus = 15
 }
 
 export enum VehicleSize {
@@ -16,8 +24,8 @@ export enum VehicleSize {
   large
 }
 export enum VehicleType {
-  car,
-  van,
-  truck,
-  bus
+  car = "Car",
+  van = "Van",
+  truck = "Truck",
+  bus = "Bus"
 }
